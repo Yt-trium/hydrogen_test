@@ -5,6 +5,7 @@ using namespace std;
 
 void hydrogen_test();
 void memoryEditing_test();
+void console_test();
 
 int main()
 {
@@ -14,6 +15,7 @@ int main()
     cout << "-- Hydrogen Test --"   << endl;
     cout << "1 - hydrogen"          << endl;
     cout << "2 - memoryEditing"     << endl;
+    cout << "3 - console"           << endl;
     cout << "0 - Quit"              << endl;
     cin >> id;
     switch(id)
@@ -26,6 +28,9 @@ int main()
         break;
         case 2:
             memoryEditing_test();
+        break;
+        case 3:
+            console_test();
         break;
         default:
             cout << "Error 404" << endl;
@@ -110,5 +115,28 @@ void memoryEditing_test()
             cout << "Error 404" << endl;
         break;
     }
+    }
+}
+void console_test()
+{
+    int id;
+    cout << "-- console Test --"    << endl;
+    cout << "1 - askKey()"          << endl;
+    cout << "0 - Return"            << endl;
+    cin >> id;
+
+    console test;
+
+    switch(id)
+    {
+        case 0:
+            return;
+        break;
+        case 1:
+            cout << test.askKey() << endl;
+        break;
+        default:
+            cout << "Error 404" << endl;
+        break;
     }
 }
